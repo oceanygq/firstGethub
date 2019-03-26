@@ -1,18 +1,19 @@
 spring:
   profiles:
     active:
-    -dev
+    - dev
 ---
 server:
-  port: 8002
+  port: 3355
 spring:
   application:
-    name: STUDET-PROVIDER
-  profiles:dev
+    name: MICRO-SERVER-DEV
+  profiles: dev #开发环境
+
 ---
 server:
-  port: 8004
+  port: 3356
 spring:
   application:
-    name: STUDET-PROVIDER
-  profiles:test #测试环境
+    name: MICRO-SERVER-TEST
+profiles: test #开发环境
